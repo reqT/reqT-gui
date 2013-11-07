@@ -24,6 +24,7 @@ Create jar
 Find your [YOUR_jar.exe_PATH]. In Windows it may be: C:/Program Files/Java/jdk1.7.0_40/bin/jar.exe
 
 Execute the following commands.
+
 	* cd to top folder.
 	* scalac -cp "./lib/JaCoP-3.2.jar;./lib/reqT.jar" ./src/main/scala/gui/* -d bin
 	* "[YOUR_jar.exe_PATH]" -cfm ReqTGUI.jar MANIFEST.MF -C bin .

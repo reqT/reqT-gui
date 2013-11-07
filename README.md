@@ -44,7 +44,7 @@ Runnable jar in Eclipse
 	
 Example of a object that starts the laboratory main object:
 
-<code>
+```
 package main
 import gui.ReqTGUI
 
@@ -53,11 +53,11 @@ object MyMain {
 	  gui.laboratoryMain.start()
   }
 }
-</code>
+```
 
 Example of a Java wrapper:
 
-<code>
+```
 package javamain;
 
 import main.MyMain;
@@ -69,4 +69,4 @@ public class Wrapping {
 	}
 	
 }
-</code>
+```

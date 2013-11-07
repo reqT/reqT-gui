@@ -1,0 +1,2 @@
+Main-Class: gui.laboratoryMain
+Class-Path: ReqTGUI.jar scala-library.jar

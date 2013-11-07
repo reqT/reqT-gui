@@ -27,6 +27,8 @@ Execute the following commands.
 
 	* cd to top folder.
 	* scalac -cp "./lib/JaCoP-3.2.jar;./lib/reqT.jar" ./src/main/scala/gui/* -d bin
+	* cp locktrans15 ./bin/gui/locktrans15
+	* cp locktrans25 ./bin/gui/locktrans25
 	* "[YOUR_jar.exe_PATH]" -cfm ReqTGUI.jar MANIFEST.MF -C bin .
 
 Runnable jar in Eclipse

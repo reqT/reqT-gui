@@ -1,7 +1,10 @@
 reqT-gui
 ========
 
-A prototype GUI frontend to reqT
+ReqTGUI is a requirements engineering tool prototype developed during the master
+thesis by Oskar Präntare and Joel Johansson in the spring of 2013. ReqTGUI is built
+on the requirements modelling tool reqT ( www.reqt.org ) that is developed by professor
+Björn Regnell at the university of Lund at the faculty of engineering, LTH.
 
 Compilation
 ===========

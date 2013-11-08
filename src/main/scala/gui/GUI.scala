@@ -310,6 +310,32 @@ class GUI(modelName: String, view: View, container: ModelContainer) extends JFra
 
 	border.add(menu)
 	border.add(editMenu)
+
+	var exportMenu = new JMenu("Export") with Tooltip { override def getMessage(): String = { return "Export model to file." } }
+  var exportToTable = new JMenuItem(
+    new AbstractAction("Export to table") {      
+      def actionPerformed(event: ActionEvent) =  saveAsTable
+    }
+  )
+  def saveAsTable {
+    val location = modelTab.getSelectedIndex
+		if (location >= 0 && modelTab.getTabCount() > 0) {
+			val container = modelContainers(modelTab.getTitleAt(location))
+        val fc: JFileChooser = new JFileChooser()
+        if (fc.showSaveDialog(main) == JFileChooser.APPROVE_OPTION) {
+          val file: File = fc.getSelectedFile()
+          val defaultTabSep = ";" //This should be configurable??
+          val tabSep: String = {
+            val maybeTabSep = JOptionPane.showInputDialog(null, "Tab separator", defaultTabSep)
+            if (maybeTabSep!=null && !maybeTabSep.isEmpty) maybeTabSep else defaultTabSep
+          }
+          container.model.toTable(tabSep).save(file.getAbsolutePath)
+        }
+    }    
+  }
+  
+  exportMenu.add(exportToTable)
+  border.add(exportMenu)
 	border.add(about)
 	var listView = new ListView()
 	east.add(listView)

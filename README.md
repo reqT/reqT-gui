@@ -29,10 +29,19 @@ Find your [YOUR_jar.exe_PATH]. In Windows it may be: C:/Program Files/Java/jdk1.
 Execute the following commands.
 
 	* cd to top folder.
-	* scalac -cp "./lib/JaCoP-3.2.jar;./lib/reqT.jar" ./src/main/scala/gui/* -d bin
-	* cp locktrans15 ./bin/gui/locktrans15
-	* cp locktrans25 ./bin/gui/locktrans25
+	* `scalac -cp "./lib/JaCoP-3.2.jar;./lib/reqT.jar" ./src/main/scala/gui/* -d bin`
+	* `cp locktrans15.png ./bin/gui/locktrans15.png`
+	* `cp locktrans25.png ./bin/gui/locktrans25.png`
 	* "[YOUR_jar.exe_PATH]" -cfm ReqTGUI.jar MANIFEST.MF -C bin .
+  
+To execute the reqT-gui from command line inside the top folder as above:
+  * `scala -toolcp bin/reqT.jar -cp ReqTGUI.jar`
+  * Or if you don't want to use the jar, but the class files in bin/gui:
+  * `scala -toolcp bin/reqT.jar -cp bin/gui/`
+  * Then after scala has starte type at the `scala>` prompt:
+  
+    * `reqt.init($intp)`
+    * `gui.ReqTGUI()`  and don't forget the () 
 
 Runnable jar in Eclipse
 -----------------------

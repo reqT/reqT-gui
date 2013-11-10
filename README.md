@@ -39,11 +39,12 @@ Execute
 To execute the ReqTGUI from command line inside the top folder as above:
   * `scala -toolcp bin/reqT.jar -cp ReqTGUI.jar`
   * Or if you don't want to use the jar, but the class files in bin/gui:
-  * `scala -toolcp bin/reqT.jar -cp bin/gui/`
+  * `scala -toolcp bin/reqT.jar -cp bin`
   * Then after scala has starte type at the `scala>` prompt:
   
     * `reqt.init($intp)`
     * `gui.ReqTGUI()`  and don't forget the () 
+    * use `exit`to exit and not `:q` as the latter may cause hanging thread
 
 Runnable jar in Eclipse
 -----------------------

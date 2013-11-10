@@ -38,8 +38,9 @@ Execute
   
 To execute the ReqTGUI from command line inside the top folder as above:
   * `scala -toolcp bin/reqT.jar -cp ReqTGUI.jar`
-  * Or if you don't want to use the jar, but the class files in bin/gui:
-  * `scala -toolcp bin/reqT.jar -cp bin`
+  * Or if you don't want to use the jar, but the class files in bin:
+  * Windows: `scala -toolcp "lib/reqT.jar;bin" -cp "lib/reqT.jar;bin"`
+  * Unix: `scala -toolcp lib/reqT.jar:bin -cp lib/reqT.jar:bin`
   * Then after scala has started, type at the `scala>` prompt:
   
     * `reqt.init($intp)`

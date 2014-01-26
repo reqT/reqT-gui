@@ -13,7 +13,7 @@ Compilation
 Prerequisites
 -------------
 
-You need to have Java and Scala installed.
+You need to have Java 1.7 and Scala 2.10 installed.
 
 Create a bin/ and lib/ folder at the top level.
 

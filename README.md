@@ -15,11 +15,13 @@ Prerequisites
 
 You need to have Java 1.7 and Scala 2.10 installed.
 
-Create a bin/ and lib/ folder at the top level.
+Create a bin/ folder at the top level.
 
-Add JaCoP-3.2.jar and reqT.jar to the lib folder.
+The lib/ folder should contain JaCoP-3.2.jar and reqT.jar to the lib folder.
 
-Add reqT.jar to the bin folder.
+Copy the reqT.jar to the bin folder.
+
+(The reqT.jar is compiled based on the reqT v2.3.x branch)
 
 Create jar
 ----------

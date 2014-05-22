@@ -1,4 +1,4 @@
-reqT-gist-gui-prototype
+reqT-gist-constr-gui-prototype
 ========
 
 ReqTGUI is a requirements engineering tool prototype developed during the master

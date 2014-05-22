@@ -1,4 +1,4 @@
-reqT-gist-constr-gui-prototype
+reqT-constr-gui-prototype
 ========
 
 This repo is a requirements engineering tool prototype developed during the master
